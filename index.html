@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <title>Home</title> 
+
+<a name="top"></a>
+
+<style>
+  body {margin:0;height:950px;}
+
+  .icon-bar {
+    position: fixed;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  
+  .icon-bar a {
+    display: block;
+    text-align: center;
+    padding: 16px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 20px;
+  }
+  
+  .icon-bar a:hover {
+    background-color: #000;
+  }
+  
+  .facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  
+  .instagram {
+    background: #8a3ab9;
+    color: white;
+  }
+
+  .content {
+    margin-left: 75px;
+    font-size: 30px;
+  }
+ 
+  img {
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+
+/* Button used to open the contact form - fixed at the bottom of the page */
+.open-button {
+  background-color: rgb(240, 140, 206);
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #f8b0da;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: rgb(252, 76, 76);
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+</style>
+</head>
+<body>
+  <div class="icon-bar">
+    <a href="https://www.facebook.com/fatin.amirahhh" class="facebook"><i class="fa fa-facebook"></i></a> 
+    <a href="https://twitter.com/f4tinamirah" class="twitter"><i class="fa fa-twitter"></i></a> 
+    <a href="https://www.instagram.com/f4tinamirah/" class="instagram"><i class="fa fa-instagram"></i></a> 
+  </div>
+
+  <div class="navbar">
+  <a href="student.html">Student</a>
+  <a href="video.html">Video</a>
+  <a href="working_experience.html">Working experience</a>
+  <a href="skills.html">Skills</a>
+  <a href="education.html">Education</a> 
+  <a href="background.html">Background</a>
+  <a href="index.html">Home</a> 
+  <img src="image/logo.png" alt="logo" style="width:78px">
+  </div>
+
+  <div class="header">
+    <h1>Hello! I'm Fatin</h1>
+  </div>
+<br>
+  <div class="square"> 
+    <div>  
+        <img src="image/me.png" alt="me" style="width:400px">  
+    </div> 
+  </div>  
+
+<blockquote>"Don't focus on the pain, focus on the progress"</blockquote>
+<p>-Dyawne Johnson-</p>
+<br>
+<b>You can find my contact at <a href="background.html">Background</a></b>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<button class="open-button" onclick="openForm()">Send message</button>
+
+<div class="form-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h4>Please fill out the form below.</h4>
+    
+    <label for="name"><b>Name</b></label>
+    <input type="text" placeholder="Your name" name="name" required>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Your email" name="email" required>
+
+    <label for="message"><b>Message</b></label>
+    <input type="text" placeholder="Write message" name="message" required>
+
+    <button type="submit" class="btn">Submit</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+ 
+<a href="#top"><img src="image/top.png" alt="top"></a>
+
+<div class="footer">
+  <p> &copy; Copyright 2021, Google Chrome & 1366 x 768, Last update on 22/12/2021. </p>
+</div>
+
+</body>
+</html>
