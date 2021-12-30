@@ -4,13 +4,13 @@ body {font-family: Arial, Helvetica, sans-serif;
       background-color: #f1f1f1; 
 }
 
-.navbar {
+navbar {
   width: 100%;
-  background-color: rgb(240, 159, 186);
+  background-color: rgb(247, 181, 203);
   overflow: auto;
 }
 
-.navbar a {
+navbar a {
   float: right;
   padding: 14px 16px;
   color: rgb(250, 246, 246);
@@ -18,13 +18,13 @@ body {font-family: Arial, Helvetica, sans-serif;
   font-size: 17px;  
 }
 
-.navbar a:hover {
+navbar a:hover {
   background-color: rgb(215, 241, 247);
   color: rgb(3, 3, 3);
 }
 
 @media screen and (max-width: 500px) {
-  .navbar a {
+  navbar a {
     float: none;
     display: block;
     width: 100%;
@@ -39,16 +39,21 @@ body {
 }
 
 /* Header/Logo Title */
-.header {
+header {
+  font-size: 30px; 
+  text-align: center; 
+  background-image: url(image/daisy.png); 
   padding: 80px;
-  text-align: center;
-  background-image: url("image/daisy.png");
-  color: black;
-  font-size: 30px;
 }
 
 h1 {font-family: Helvetica; font-size: 33px; text-align: center;}
 
 /* Page Content */
 .content {padding:20px;}
- 
+
+/* Footer */
+footer {
+  color:black;
+  font-size:12px; 
+  text-align:center
+}
