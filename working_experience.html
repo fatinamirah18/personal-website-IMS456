@@ -9,13 +9,14 @@
  body {
   background-color: #f1f1f1; 
 }
-.navbar {
+
+navbar {
   width: 100%;
   background-color: rgb(247, 181, 203);
   overflow: auto;
 }
 
-.navbar a {
+navbar a {
   float: right;
   padding: 14px 16px;
   color: rgb(250, 246, 246);
@@ -23,13 +24,13 @@
   font-size: 17px;  
 }
 
-.navbar a:hover {
+navbar a:hover {
   background-color: rgb(215, 241, 247);
   color: rgb(3, 3, 3);
 }
 
 @media screen and (max-width: 500px) {
-  .navbar a {
+  navbar a {
     float: none;
     display: block;
     width: 100%;
@@ -44,12 +45,11 @@ body {
 }
 
 /* Header/Logo Title */
-.header {
+header {
+  font-size: 30px; 
+  text-align: center; 
+  background-image: url(image/daisy.png); 
   padding: 80px;
-  text-align: center;
-  background-image: url("image/daisy.png");
-  color: black;
-  font-size: 30px;
 }
 
 h1 {font-family: Helvetica; font-size: 33px; text-align: center;}
@@ -57,29 +57,23 @@ h1 {font-family: Helvetica; font-size: 33px; text-align: center;}
 
 /* Page Content */
 .content {padding:20px;}
+
+/* Footer */
+footer {
+  color:black;
+  font-size:12px; 
+  text-align:center
+}
  
 ul.a {
       list-style-position: outside;
     }  
-
-/* Footer */
-.footer {
-   position: fixed;
-   left: 0;
-   bottom: 0;
-   width: 100%;
-   height: 30px;
-   background-color: white;
-   color: black;
-   text-align: center;
-   font-family: Arial, Helvetica, sans-serif;
-   font-size: 12px;
-}   
+  
 </style>
 </head>
 
 <body>
-  <div class="navbar">
+  <navbar>
     <a href="student.html">Student</a>
     <a href="video.html">Video</a>
     <a href="working_experience.html">Working experience</a>
@@ -87,20 +81,20 @@ ul.a {
     <a href="education.html">Education</a> 
     <a href="background.html">Background</a>
     <a href="index.html">Home</a> 
-  </div>
+  </navbar>
 
-  <div class="header">
-      <h1>Working Experience</h1>
-  </div>
+  <header>
+    <h1>Working experience</h1>
+</header>
 
     <ul class="a">
     <li><h3>Shop assistant</h3>
-     I used to work as a shop assistant in a supermarket for a few months. I worked there after finishing SPM.
+     I used to work as a shop assistant in a supermarket for a few months. I worked there after finishing my SPM.
      Every morning, I have to sweep the floor in my section on duty. Among my jobs is that I have to fill items
      on empty shelves or already short of items. I also need to check the quantity of items to be stocked.
      In addition, I need to help customers find what they need and sometimes need to lift items for them. 
-     While working there, I learned to be more disciplined, considerate and the best way to serve different types 
-     of customers.</li>
+     While working there, I learned to be more disciplined, tolerant and polishing my communication skills 
+     since I had to interact with different customers.</li>
 
     <li><h3>Runner</h3> 
     During my diploma, I used to work as a runner to deliver waffles. I work 2-3 times a week according to free
@@ -117,7 +111,7 @@ ul.a {
 <br>
 <br>     
    
-<footer style="color:black;font-size:12px; text-align:center">
+<footer>
   <p> &copy; Copyright 2021, Google Chrome & 1366 x 768, Last update on 22/12/2021. </p>
 </footer>
 
